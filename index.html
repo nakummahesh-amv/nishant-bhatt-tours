@@ -2,88 +2,79 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Nishant Bhatt Tours & Travels</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nishant Bhatt Tours & Travels</title>
 
 <style>
 
 body{
+font-family: Arial, sans-serif;
 margin:0;
-font-family:Arial;
+padding:0;
 background:#f5f5f5;
 }
 
 header{
-background:#0d6efd;
+background:#0b3d91;
 color:white;
-padding:25px;
+padding:20px;
 text-align:center;
 }
 
 nav{
 background:#222;
+padding:10px;
 text-align:center;
-padding:12px;
 }
 
 nav a{
 color:white;
-margin:15px;
+margin:0 15px;
 text-decoration:none;
-font-size:18px;
-}
-
-.hero{
-background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover;
-height:350px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:35px;
 font-weight:bold;
 }
 
 section{
 padding:40px;
-text-align:center;
 }
 
-.vehicles{
+.hero{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.services{
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:20px;
 }
 
 .card{
 background:white;
 padding:20px;
-width:280px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-}
-
-.btn{
-display:inline-block;
-margin:10px;
-padding:12px 20px;
-background:#0d6efd;
-color:white;
-text-decoration:none;
-border-radius:5px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+flex:1;
+min-width:250px;
 }
 
 footer{
-background:#111;
+background:#222;
 color:white;
 text-align:center;
 padding:20px;
+}
+
+.button{
+background:#25D366;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:6px;
+display:inline-block;
+margin-top:10px;
 }
 
 </style>
@@ -93,60 +84,87 @@ padding:20px;
 
 <header>
 <h1>Nishant Bhatt Tours & Travels</h1>
-<p>Khambhaliya, Gujarat</p>
+<p>Comfortable & Reliable Travel Services</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#routes">Routes</a>
 <a href="#vehicles">Vehicles</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
-Explore Gujarat With Us
+<h2>Your Trusted Travel Partner</h2>
+<p>We provide comfortable and safe travel services for families and groups.</p>
+<a class="button" href="https://wa.me/919999999999">Book on WhatsApp</a>
 </div>
 
-<section>
-<h2>Welcome</h2>
-<p>Reliable and comfortable travel service in Gujarat. Perfect for family trips, tours and local travel.</p>
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Family Tours</h3>
+<p>Comfortable trips for families with experienced drivers.</p>
+</div>
+
+<div class="card">
+<h3>Temple Tours</h3>
+<p>Special tours for Dwarka, Somnath, and other holy places.</p>
+</div>
+
+<div class="card">
+<h3>Outstation Trips</h3>
+<p>Long distance trips with safe and comfortable vehicles.</p>
+</div>
+
+</div>
+</section>
+
+<section id="routes">
+<h2>Popular Routes</h2>
+
+<ul>
+<li>Dwarka – Somnath</li>
+<li>Dwarka – Bet Dwarka</li>
+<li>Dwarka – Porbandar</li>
+<li>Jamnagar – Dwarka</li>
+<li>Rajkot – Dwarka</li>
+</ul>
+
 </section>
 
 <section id="vehicles">
+
 <h2>Our Vehicles</h2>
 
-<div class="vehicles">
-
-<div class="card">
-<img src="https://source.unsplash.com/400x300/?maruti,eeco">
-<h3>Maruti Eeco</h3>
-<p>Total Vehicles: 3</p>
-</div>
-
-<div class="card">
-<img src="https://source.unsplash.com/400x300/?auto,rickshaw">
-<h3>Auto Riksha</h3>
-<p>Total Vehicles: 2</p>
-</div>
-
-</div>
+<ul>
+<li>Innova Crysta</li>
+<li>Ertiga</li>
+<li>Tempo Traveller</li>
+<li>Mini Bus</li>
+</ul>
 
 </section>
 
 <section id="contact">
+
 <h2>Contact Us</h2>
 
-<p><b>Name:</b> Nishant Bhatt</p>
-<p><b>Phone:</b> 7622868268</p>
-<p><b>City:</b> Khambhaliya, Gujarat</p>
+<p><b>Owner:</b> Nishant Bhatt</p>
+<p><b>Location:</b> Khambhaliya, Gujarat</p>
+<p><b>Phone:</b> +91 9999999999</p>
 
-<a class="btn" href="tel:7622868268">Call Now</a>
-
-<a class="btn" href="https://wa.me/917622868268">WhatsApp</a>
+<a class="button" href="https://wa.me/919999999999">WhatsApp Booking</a>
 
 </section>
 
 <footer>
-<p>© 2026 Nishant Bhatt Tours & Travels</p>
+
+<p>© 2025 Nishant Bhatt Tours & Travels</p>
+
 </footer>
 
 </body>
