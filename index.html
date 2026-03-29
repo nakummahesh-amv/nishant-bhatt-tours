@@ -3,27 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nishant Bhatt Tours & Travels</title>
 
 <style>
 
 body{
-font-family:Arial;
+font-family: Arial;
 margin:0;
-background:#f4f4f4;
+background:#f5f5f5;
 }
 
 header{
 background:#0b3d91;
 color:white;
-text-align:center;
 padding:20px;
+text-align:center;
 }
 
 nav{
 background:#222;
-padding:12px;
+padding:10px;
 text-align:center;
 }
 
@@ -34,42 +33,15 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.slider{
-width:100%;
-height:400px;
-overflow:hidden;
-}
-
-.slides{
-display:flex;
-width:400%;
-animation:slide 12s infinite;
-}
-
-.slides img{
-width:100%;
-height:400px;
-object-fit:cover;
-}
-
-@keyframes slide{
-
-0%{margin-left:0}
-25%{margin-left:0}
-
-30%{margin-left:-100%}
-50%{margin-left:-100%}
-
-55%{margin-left:-200%}
-75%{margin-left:-200%}
-
-80%{margin-left:-300%}
-100%{margin-left:-300%}
-
-}
-
 section{
 padding:40px;
+}
+
+.hero{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:70px 20px;
 }
 
 .services{
@@ -85,11 +57,23 @@ border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 flex:1;
 min-width:250px;
+text-align:center;
 }
 
 .card img{
 width:100%;
 border-radius:8px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
 }
 
 .button{
@@ -102,19 +86,17 @@ display:inline-block;
 margin-top:10px;
 }
 
-.review{
+.review-box{
 background:white;
-padding:15px;
-margin:10px 0;
-border-radius:8px;
+padding:20px;
+border-radius:10px;
+max-width:400px;
 }
 
 input,textarea{
 width:100%;
 padding:10px;
-margin:5px 0;
-border-radius:5px;
-border:1px solid #ccc;
+margin-top:10px;
 }
 
 footer{
@@ -130,32 +112,27 @@ padding:20px;
 <body>
 
 <header>
-
 <h1>Nishant Bhatt Tours & Travels</h1>
-<p>Comfortable & Reliable Travel Service</p>
-
+<p>Comfortable & Reliable Travel Services</p>
 </header>
 
 <nav>
-
 <a href="#services">Services</a>
+<a href="#vehicles">Vehicles</a>
 <a href="#gallery">Gallery</a>
-<a href="#vehicle">Vehicle</a>
 <a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
-<div class="slider">
+<div class="hero">
 
-<div class="slides">
+<h2>Your Trusted Travel Partner</h2>
 
-<img src="dwarka.jpg">
-<img src="nageshwar.jpg">
-<img src="gopi.jpg">
-<img src="bridge.jpg">
+<p>Service Available 24×7</p>
 
-</div>
+<p>Charges ₹10 Per KM</p>
+
+<a class="button" href="https://wa.me/917622868268">Book on WhatsApp</a>
 
 </div>
 
@@ -166,119 +143,96 @@ padding:20px;
 <div class="services">
 
 <div class="card">
+<h3>Family Tours</h3>
+<p>Comfortable trips for families.</p>
+</div>
+
+<div class="card">
 <h3>Temple Tours</h3>
-<p>Dwarka, Nageshwar, Bet Dwarka and nearby temples.</p>
+<p>Dwarka, Somnath, Nageshwar tours.</p>
 </div>
 
 <div class="card">
-<h3>Family Trips</h3>
-<p>Comfortable travel for families.</p>
+<h3>Outstation Trips</h3>
+<p>Safe long distance travel.</p>
 </div>
 
+</div>
+</section>
+
+
+<section id="vehicles">
+
+<h2>Our Vehicles</h2>
+
+<div class="services">
+
 <div class="card">
-<h3>Outstation Travel</h3>
-<p>Safe long distance travel service.</p>
+<img src="19107796-941e-448d-8b30-3fc5ed12d23b.jpeg">
+<p>Suzuki Eeco</p>
 </div>
 
 </div>
 
 </section>
+
 
 <section id="gallery">
 
 <h2>Tour Gallery</h2>
 
-<div class="services">
+<div class="gallery">
 
-<div class="card">
-<img src="dwarka.jpg">
-<p>Dwarka Temple</p>
-</div>
-
-<div class="card">
-<img src="nageshwar.jpg">
-<p>Nageshwar Jyotirling</p>
-</div>
-
-<div class="card">
-<img src="gopi.jpg">
-<p>Gopi Talav</p>
-</div>
-
-<div class="card">
-<img src="bridge.jpg">
-<p>Dwarka Bridge</p>
-</div>
+<img src="8a7141ab-95ff-45ac-ace7-e8269da676e1.jpeg">
+<img src="61ce7bdb-dc8c-4612-998b-b905db173085.jpeg">
+<img src="5e687358-4ebd-4dae-b902-5a24236c9b00.jpeg">
+<img src="389e777f-ff6d-498a-81fb-720fe430902a.jpeg">
+<img src="53229f52-4667-4c80-b120-02643a2ed488.jpeg">
+<img src="72156c77-2d85-4215-8e29-8abe4b4b3b05.jpeg">
+<img src="00ea296b-9067-4640-ac95-f61983021566.jpeg">
+<img src="afdc8797-64b5-4a95-8ca4-474d66b49702.jpeg">
+<img src="ae0d0650-f3bf-47c0-b865-1c19b4826316.jpeg">
+<img src="5318732a-374a-4720-ad1d-35a6f359ce4c.jpeg">
+<img src="35afda25-7aff-4c14-8aa8-e801926944bf.jpeg">
+<img src="7482c457-456f-4cc7-8ab9-51ed3a924185.jpeg">
 
 </div>
 
 </section>
 
-<section id="vehicle">
-
-<h2>Our Vehicle</h2>
-
-<div class="services">
-
-<div class="card">
-<img src="eeco.jpg">
-<p>Maruti Suzuki Eeco Tourist Vehicle</p>
-</div>
-
-</div>
-
-</section>
 
 <section id="reviews">
 
 <h2>Customer Reviews</h2>
 
-<div class="review">
-⭐ ⭐ ⭐ ⭐ ⭐
-<p>Very good travel service and comfortable journey.</p>
+<div class="review-box">
+
+<p>Leave Your Review ⭐</p>
+
+<input type="text" placeholder="Your Name">
+
+<textarea placeholder="Write your review"></textarea>
+
+<br>
+
+<a class="button" href="https://wa.me/917622868268">Send Review on WhatsApp</a>
+
 </div>
-
-<div class="review">
-⭐ ⭐ ⭐ ⭐ ⭐
-<p>Best tour service for Dwarka temple visit.</p>
-</div>
-
-<h3>Write Your Review</h3>
-
-<form onsubmit="addReview(); return false;">
-
-<input type="text" id="name" placeholder="Your Name" required>
-
-<textarea id="message" placeholder="Your Review" required></textarea>
-
-<button class="button">Submit Review</button>
-
-</form>
-
-<div id="newReviews"></div>
 
 </section>
+
 
 <section id="contact">
 
 <h2>Contact Us</h2>
 
 <p><b>Owner:</b> Nishant Bhatt</p>
-<p><b>Phone:</b> +91 7622868268</p>
+
 <p><b>Location:</b> Khambhaliya, Gujarat</p>
 
-<a class="button" href="https://wa.me/917622868268">Book on WhatsApp</a>
+<p><b>Phone:</b> +91 7622868268</p>
 
-</section>
-
-<section>
-
-<h2>Our Location</h2>
-
-<iframe 
-src="https://maps.google.com/maps?q=khambhaliya&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="300">
-</iframe>
+<a class="button" href="https://wa.me/917622868268">WhatsApp Booking</a>
 
 </section>
 
@@ -287,28 +241,6 @@ width="100%" height="300">
 <p>© 2025 Nishant Bhatt Tours & Travels</p>
 
 </footer>
-
-<script>
-
-function addReview(){
-
-var name=document.getElementById("name").value;
-var message=document.getElementById("message").value;
-
-var review=document.createElement("div");
-
-review.className="review";
-
-review.innerHTML="⭐ ⭐ ⭐ ⭐ ⭐ <p>"+name+": "+message+"</p>";
-
-document.getElementById("newReviews").appendChild(review);
-
-document.getElementById("name").value="";
-document.getElementById("message").value="";
-
-}
-
-</script>
 
 </body>
 </html>
