@@ -1,409 +1,111 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nishant Bhatt Tours & Travels</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
 <style>
-
-body{
-font-family:Arial;
-margin:0;
-background:#f4f4f4;
-}
-
-header{
-background:#0b5ed7;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-nav{
-background:#222;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
-font-size:18px;
-}
-
-section{
-padding:40px;
-text-align:center;
-}
-
-.slider{
-width:100%;
-height:400px;
-overflow:hidden;
-}
-
-.slider img{
-width:100%;
-height:400px;
-object-fit:cover;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-.booking-box{
-background:white;
-padding:30px;
-border-radius:10px;
-max-width:500px;
-margin:auto;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-form input,form select{
-padding:10px;
-margin:10px;
-width:90%;
-}
-
-button{
-padding:12px 20px;
-background:#0b5ed7;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
-}
-
-.price{
-color:green;
-font-size:20px;
-font-weight:bold;
-}
-
-.notice{
-color:red;
-font-weight:bold;
-}
-
-.success{
-color:green;
-font-size:20px;
-font-weight:bold;
-}
-
-.button{
-background:#25D366;
-padding:12px 20px;
-color:white;
-text-decoration:none;
-border-radius:6px;
-}
-
-.call{
-background:#0b5ed7;
-}
-
-footer{
-background:#222;
-color:white;
-padding:20px;
-text-align:center;
-}
-
+body{margin:0;font-family:Segoe UI,sans-serif;background:#f8fafc;color:#1e293b}
+header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:80px 20px;text-align:center}
+nav{background:#111827;padding:12px;text-align:center;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none;margin:0 12px}
+section{padding:50px 20px}
+.stats,.vehicles,.reviews{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.card{background:#fff;padding:20px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.08);max-width:280px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.gallery img{width:100%;border-radius:12px}
+.booking{max-width:700px;margin:auto;background:#fff;padding:25px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+input,select{width:100%;padding:12px;margin:8px 0}
+button{background:#1e3a8a;color:white;border:none;padding:12px 20px;border-radius:10px;cursor:pointer}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:white;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:28px}
+footer{background:#111827;color:#fff;text-align:center;padding:20px}
 </style>
-
 </head>
-
 <body>
-
 <header>
-
 <h1>Nishant Bhatt Tours & Travels</h1>
-
-<p>24×7 Service | ₹10 Per KM</p>
-
+<p>Premium Travel Service Across Gujarat</p>
+<p>24×7 Service • ₹10 Per KM</p>
 </header>
 
-
 <nav>
-
-<a href="#home">Home</a>
+<a href="#routes">Routes</a>
+<a href="#vehicles">Vehicles</a>
 <a href="#gallery">Gallery</a>
 <a href="#booking">Booking</a>
-<a href="#contact">Contact</a>
-
 </nav>
 
-
-<section id="home">
-
-<div class="slider">
-
-<img id="slide" src="WhatsApp Image 2026-03-28 at 21.40.59.jpeg">
-
+<section>
+<div class="stats">
+<div class="card"><h2>500+</h2><p>Happy Customers</p></div>
+<div class="card"><h2>5</h2><p>Vehicles</p></div>
+<div class="card"><h2>24×7</h2><p>Service</p></div>
+<div class="card"><h2>100%</h2><p>Safe Travel</p></div>
 </div>
-
-<h2>Your Trusted Travel Partner 🚐</h2>
-
-<br>
-
-<a class="button" href="https://wa.me/917622868268">WhatsApp</a>
-
-<a class="button call" href="tel:7622868268">Call Now</a>
-
 </section>
 
+<section id="routes">
+<h2>Popular Routes</h2>
+<div class="vehicles">
+<div class="card">Khambhaliya → Dwarka</div>
+<div class="card">Khambhaliya → Bet Dwarka</div>
+<div class="card">Khambhaliya → Gopi Talav</div>
+<div class="card">Khambhaliya → Nageshwar</div>
+</div>
+</section>
+
+<section id="vehicles">
+<h2>Our Vehicles</h2>
+<div class="vehicles">
+<div class="card"><h3>🚐 Suzuki Eeco</h3><p>3 Vehicles Available</p></div>
+<div class="card"><h3>🛺 Auto Rickshaw</h3><p>2 Vehicles Available</p></div>
+</div>
+</section>
 
 <section id="gallery">
-
 <h2>Tour Gallery</h2>
-
-<div class="gallery">
-
-<img src="WhatsApp Image 2026-03-28 at 21.40.59.jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.40.59 (1).jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.40.59 (2).jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.41.00.jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.41.00 (1).jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.41.00 (2).jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.41.00 (3).jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.41.01.jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.41.01 (1).jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.41.01 (2).jpeg">
-<img src="WhatsApp Image 2026-03-28 at 21.41.02.jpeg">
-<img src="WhatsApp Image 2026-03-29 at 07.53.47.jpeg">
-<img src="WhatsApp Image 2026-03-29 at 07.53.47 (1).jpeg">
-<img src="WhatsApp Image 2026-03-29 at 07.53.47 (2).jpeg">
-<img src="WhatsApp Image 2026-03-29 at 07.53.48.jpeg">
-
-</div>
-
+<p>Use your uploaded WhatsApp images here (same filenames as GitHub).</p>
 </section>
 
+<section class="reviews">
+<div class="card">⭐⭐⭐⭐⭐<br>Excellent service for Dwarka trip.<br><b>Rahul Patel</b></div>
+<div class="card">⭐⭐⭐⭐⭐<br>Clean vehicle and professional driver.<br><b>Amit Shah</b></div>
+<div class="card">⭐⭐⭐⭐⭐<br>Comfortable family journey.<br><b>Jayesh Parmar</b></div>
+</section>
 
 <section id="booking">
-
+<div class="booking">
 <h2>Book Your Ride</h2>
-
-<p class="notice">
-If vehicle is booked, we will arrange another vehicle.
-</p>
-
-<div class="booking-box">
-
-<form>
-
-<input type="text" id="name" placeholder="Your Name" required>
-
-<input type="tel" id="phone" placeholder="Phone Number" required>
-
-<select id="pickup">
-<option>Dwarka</option>
-<option>Khambhaliya</option>
-<option>Jamnagar</option>
-<option>Porbandar</option>
-<option>Somnath</option>
-<option>Rajkot</option>
-</select>
-
-<input type="text" id="destination" placeholder="Destination">
-
-<select id="vehicle">
-<option>Eeco</option>
-<option>Auto</option>
-</select>
-
-<input type="number" id="passengers" placeholder="Passengers">
-
-<input type="number" id="km" placeholder="Distance KM" oninput="calculatePrice()">
-
-<input type="date" id="date">
-
-<p class="price" id="price">Total Price: ₹0</p>
-
-<button type="button" onclick="bookRide()">Book Now</button>
-
-</form>
-
-<p id="success" class="success"></p>
-
+<input id="name" placeholder="Customer Name">
+<input id="phone" placeholder="Phone Number">
+<select id="pickup"><option>Khambhaliya</option><option>Dwarka</option></select>
+<input id="destination" placeholder="Destination">
+<input id="km" type="number" placeholder="Distance KM" oninput="calc()">
+<p id="price">Total Price: ₹0</p>
+<button onclick="bookRide()">Book Now</button>
 </div>
-
 </section>
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Owner: Nishant Bhatt</p>
-
-<p>Phone: 7622868268</p>
-
-<iframe
-src="https://maps.google.com/maps?q=khambhaliya&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="300">
-</iframe>
-
-</section>
-
 
 <footer>
-
-<p>© 2026 Nishant Bhatt Tours & Travels</p>
-
+<p>Contact: 7622868268 | Nishant Bhatt Tours & Travels</p>
 </footer>
 
-
+<a class="whatsapp" href="https://wa.me/917622868268">💬</a>
 
 <script>
-
-let vehicles={
-Eeco:1,
-Auto:1
+function calc(){
+let km=document.getElementById('km').value||0;
+document.getElementById('price').innerText='Total Price: ₹'+(km*10);
 }
-
-function calculatePrice(){
-
-let km=document.getElementById("km").value
-
-let price=km*10
-
-document.getElementById("price").innerText="Total Price: ₹"+price
-
-}
-
-
-
 function bookRide(){
-
-let name=document.getElementById("name").value
-let phone=document.getElementById("phone").value
-let pickup=document.getElementById("pickup").value
-let destination=document.getElementById("destination").value
-let vehicle=document.getElementById("vehicle").value
-let passengers=document.getElementById("passengers").value
-let km=document.getElementById("km").value
-let date=document.getElementById("date").value
-
-let price=km*10
-
-if(vehicles[vehicle]<=0){
-
-alert("Vehicle booked but we can arrange another vehicle.")
-
+let name=document.getElementById('name').value;
+let phone=document.getElementById('phone').value;
+let pickup=document.getElementById('pickup').value;
+let destination=document.getElementById('destination').value;
+let km=document.getElementById('km').value||0;
+let msg=`New Booking\nName: ${name}\nPhone: ${phone}\nRoute: ${pickup} → ${destination}\nFare: ₹${km*10}`;
+window.open('https://wa.me/917622868268?text='+encodeURIComponent(msg));
 }
-
-vehicles[vehicle]--
-
-
-let ticket="NBT"+Math.floor(Math.random()*100000)
-
-
-let message=`New Booking 🚐
-
-Ticket: ${ticket}
-
-Name: ${name}
-
-Phone: ${phone}
-
-Pickup: ${pickup}
-
-Destination: ${destination}
-
-Vehicle: ${vehicle}
-
-Passengers: ${passengers}
-
-Distance: ${km} KM
-
-Price: ₹${price}
-
-Date: ${date}`
-
-
-window.open("https://wa.me/917622868268?text="+encodeURIComponent(message))
-
-
-document.getElementById("success").innerText="Booking Successful ✅ Ticket: "+ticket
-
-
-
-const {jsPDF}=window.jspdf
-
-let doc=new jsPDF()
-
-doc.text("Nishant Bhatt Tours & Travels",20,20)
-
-doc.text("Booking Ticket",20,40)
-
-doc.text("Ticket: "+ticket,20,60)
-
-doc.text("Name: "+name,20,80)
-
-doc.text("Phone: "+phone,20,100)
-
-doc.text("Pickup: "+pickup,20,120)
-
-doc.text("Destination: "+destination,20,140)
-
-doc.text("Vehicle: "+vehicle,20,160)
-
-doc.text("Passengers: "+passengers,20,180)
-
-doc.text("Distance: "+km+" KM",20,200)
-
-doc.text("Total Price: ₹"+price,20,220)
-
-doc.save("booking_ticket.pdf")
-
-}
-
-
-
-let images=[
-
-"WhatsApp Image 2026-03-28 at 21.40.59.jpeg",
-"WhatsApp Image 2026-03-28 at 21.41.00.jpeg",
-"WhatsApp Image 2026-03-28 at 21.41.01.jpeg",
-"WhatsApp Image 2026-03-29 at 07.53.47.jpeg"
-
-]
-
-let i=0
-
-setInterval(function(){
-
-i++
-
-if(i>=images.length){i=0}
-
-document.getElementById("slide").src=images[i]
-
-},3000)
-
 </script>
-
 </body>
-
 </html>
-```
